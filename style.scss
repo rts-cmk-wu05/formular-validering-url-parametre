@@ -35,13 +35,21 @@ ul{
     max-width: 1000px;
     margin: 2rem auto;
 }
-
 // ==== BOILER PLATE END ====
 
+// ==== MAPS ====
+$colors: (
+    colorPrimary: rgb(144, 206, 93),
+    colorBorder: rgb(202, 202, 202),
+    colorError: rgb(206, 53, 53)    
+);
+
+// ==== FORM ====
 .form-container{
     border: solid 2px black;
     max-width: 800px;
     padding: 2rem 1rem;
+    margin: auto;
 }
 
 .form{
@@ -70,9 +78,9 @@ ul{
         align-self: center;
     }
 
-    &__input, &__select-option{
+    &__input, &__select{
         padding-left: .5rem;
-        border: solid 2px rgb(202, 202, 202);
+        border: solid 2px map-get($colors, colorBorder);
         border-radius: 5px;
     }
 
@@ -91,8 +99,10 @@ ul{
     }
 
     &__input-radio-btn, &__input-checkbox{
-        border: solid 2px rgb(202, 202, 202);
-        transform: scale(1.5);       
+        border: solid 2px map-get($colors, colorBorder);
+        transform: scale(1.5);
+        justify-self: flex-start;
+        margin-left: .2rem;       
     }
 
     &__submit-btn{
@@ -100,14 +110,19 @@ ul{
         border: none;
         border-radius: 5px;
         color: white;
-        background-color: rgb(144, 206, 93);
+        background-color: map-get($colors, colorPrimary);
         cursor: pointer;
         transition: 100ms;
     }
 
     &__submit-btn:hover{
-        background-color: darken($color: rgb(144, 206, 93), $amount: 10);
+        background-color: darken($color: map-get($colors, colorPrimary), $amount: 10);
         transition: 100ms;
+    }
+
+    &__input_error{
+        border: solid 2px map-get($colors, colorError);
+        color: map-get($colors, colorError);   
     }
 }
 
@@ -116,5 +131,5 @@ ul{
 }
 
 input:focus{
-    outline-color: rgb(144, 206, 93);        
+    outline:none;        
 }
