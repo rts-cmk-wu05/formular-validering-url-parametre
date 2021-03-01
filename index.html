@@ -14,7 +14,7 @@
         <section class="form-container">
             <h1 class="form__header">Opret bruger i filmklubben</h1>
 
-            <form class="form" action="modtager.html" method="get">
+            <form class="form" id="form" action="modtager.html" method="get">
                 <input type="text" id="username" name="username" class="form__input" placeholder="Ønsket brugernavn">
                 <label for="username" class="form__label">Brugernavn</label>
 
@@ -41,16 +41,15 @@
                 <input type="radio" class="form__input-radio-btn" id="nyhedsbrev" name="nyhedsbrev">
                 <label for="nyhedsbrev" class="form__label-radio-btn">Vil du modtage vores nyhedsbrev?</label>
 
-                <input type="checkbox" class="form__input-checkbox" id="betingelser" name="betingelser">
+                <input type="checkbox" class="form__input-checkbox" id="betingelser" name="betingelser" required>
                 <label for="betingelser" class="form__label-checkbox">Har du læst og forstået vores
                     forretningsbetingelser?</label>
 
-                <input type="submit" class="form__submit-btn" value="Opret bruger">
+                <input type="submit" id="submit-btn" class="form__submit-btn" value="Opret bruger">
             </form>
 
         </section>
     </div><!-- WRAPPER END  -->
 </body>
 <script src="app.js"></script>
-
 </html>
