@@ -1,1 +1,139 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html, .form__input, .form__submit-btn, .form__select {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.form-container {
+  border: solid 2px black;
+  max-width: 800px;
+  padding: 2rem 1rem;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: (2.5rem)[7];
+      grid-template-rows: repeat(7, 2.5rem);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 2rem;
+      grid-template-areas: ". ." ". ." ". ." ". ." "nyhedsbrev nyhedsbrev" "betingelser betingelser";
+}
+
+.form__header {
+  padding: 1.5rem .5rem;
+  background-color: white;
+  margin-top: -4.7rem;
+  max-width: 47%;
+}
+
+.form__label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form__input, .form__select-option {
+  padding-left: .5rem;
+  border: solid 2px #cacaca;
+  border-radius: 5px;
+}
+
+.form__input-radio-btn, .form__label-radio-btn {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nyhedsbrev;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form__input-checkbox, .form__label-checkbox {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: betingelser;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form__label-radio-btn, .form__label-checkbox {
+  margin-left: 1.5rem;
+}
+
+.form__input-radio-btn, .form__input-checkbox {
+  border: solid 2px #cacaca;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.form__submit-btn {
+  max-width: 140px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #90ce5d;
+  cursor: pointer;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.form__submit-btn:hover {
+  background-color: #76be3a;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+::-ms-input-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
+}
+
+input:focus {
+  outline-color: #90ce5d;
+}
+/*# sourceMappingURL=style.css.map */
