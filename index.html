@@ -8,7 +8,43 @@
     <title>Form exercise</title>
 </head>
 <body>
-    
+   <section class="form-container">
+       <h1 class="form__header">Opret bruger i filmklubben</h1>
+
+       <form class="form" action="modtager.html" method="get">
+            <input type="text" id="username" name="username" class="form__input-username">
+            <label for="username" class="form__label-username">Brugernavn</label>
+
+            <input type="text" id="name" name="name" class="form__input-name">
+            <label for="name" class="form__label-name">Fulde navn</label>
+
+            <input type="text" id="email" name="email" class="form__input-email">
+            <label for="email" class="form__label-email">Email</label>
+
+            <select id="film-genrer" name="film-genrer" class="from__select">
+                <option value="Action" class="form__select-option">Action</option>
+                <option value="Gyser" class="form__select-option">Gyser</option>
+                <option value="Science fiction" class="form__select-option">Science fiction</option>
+                <option value="Drama" class="form__select-option">Drama</option>
+                <option value="Dokumentar" class="form__select-option">Dokumentar</option>
+                <option value="Komedie" class="form__select-option">Komedie</option>
+                <option value="Krimi" class="form__select-option">Krimi</option>
+                <option value="Tegnefilm" class="form__select-option">Tegnefilm</option>
+                <option value="Krigsfilm" class="form__select-option">Krigsfilm</option>
+                <option value="Zombiefilm" class="form__select-option">Zombiefilm</option>
+            </select>
+            <label for="film-genrer" class="form__label-select">Vælg din foretrukne genre</label>
+
+            <input type="radio" class="form__input-radio-btn" id="nyhedsbrev" name="nyhedsbrev">
+            <label for="nyhedsbrev" class="form__label-radio-btn">Vil du modtage vores nyhedsbrev?</label>
+
+            <input type="checkbox" class="form__input-checkbox" id="betingelser" name="betingelser">
+            <label for="betingelser" class="form__label-checkbox">Har du læst og forstået vores forretningsbetingelser?</label> 
+            
+            <input type="submit" class="form__submit-btn" value="submit">
+       </form>
+       
+   </section> 
 </body>
 <script src="app.js"></script>
 </html>
