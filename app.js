@@ -15,7 +15,7 @@ const submitBtn = document.querySelector('#submit-btn').addEventListener('click'
         e.preventDefault();
         return false
     }
-    console.log(isNaN(form.name.value));
+
     if (!form.email.value.match(allowedMail)) {
         highlightError(form.email);
         e.preventDefault();

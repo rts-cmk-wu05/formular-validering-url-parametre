@@ -15,27 +15,10 @@ html, .form__input, .form__submit-btn, .form__select{
     font-family: 'Montserrat', sans-serif;
 }
 
-img{
-    width:100%;
-    height:auto;
-    display:block;
-    
-}
-
-a{
-    text-decoration: none;
-    color: black;  
-  }
-
-ul{
-    list-style: none;  
-}
-
 .wrapper{
     max-width: 1000px;
     margin: 2rem auto;
 }
-// ==== BOILER PLATE END ====
 
 // ==== MAPS ====
 $colors: (
