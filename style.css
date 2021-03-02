@@ -71,6 +71,10 @@ ul {
   border-radius: 5px;
 }
 
+.form__input:hover, .form__select:hover {
+  border-color: #90ce5d;
+}
+
 .form__input-radio-btn, .form__label-radio-btn {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -101,6 +105,7 @@ ul {
           transform: scale(1.5);
   justify-self: flex-start;
   margin-left: .2rem;
+  color: #90ce5d;
 }
 
 .form__submit-btn {
@@ -123,25 +128,26 @@ ul {
 .form__input_error {
   border: solid 2px #ce3535;
   color: #ce3535;
+  outline: none;
 }
 
 ::-webkit-input-placeholder {
-  color: black;
+  color: #2c2c2c;
 }
 
 :-ms-input-placeholder {
-  color: black;
+  color: #2c2c2c;
 }
 
 ::-ms-input-placeholder {
-  color: black;
+  color: #2c2c2c;
 }
 
 ::placeholder {
-  color: black;
+  color: #2c2c2c;
 }
 
-input:focus {
-  outline: none;
+input:focus, select:focus {
+  outline-color: #90ce5d;
 }
 /*# sourceMappingURL=style.css.map */

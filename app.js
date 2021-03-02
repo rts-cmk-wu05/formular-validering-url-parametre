@@ -1,6 +1,4 @@
 
-// const form = document.querySelector('#form');
-
 const submitBtn = document.querySelector('#submit-btn').addEventListener('click', (e) => {
 
     const allowedUsername = /^[\s\w\-_'.]+$/g; //Self written and simpel regex code
